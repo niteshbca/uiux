@@ -6,7 +6,7 @@ const ItemCountSummary = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/items')
+    axios.get('http://56.124.27.238:5000/api/items')
       .then(response => {
         setItems(response.data);
         setLoading(false);
